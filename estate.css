@@ -1,0 +1,408 @@
+:root {
+    --color-blue: rgb(50, 50, 255);
+    --color-lightblue: rgb(0, 191, 255);
+    --color-black: black;
+    --color-grey: lightgrey;
+    --color-white: white;
+    --transition: all 500ms ease-in-out; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-black);
+    line-height: 1.7;
+    max-width: 100vw;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background: var(--color-grey);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: var(--color-lightblue);
+    border-radius: 0.25rem;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 2160px;
+}
+
+nav{
+    width: 100%;
+    height: 4.5rem;
+    background-color: var(--color-white);
+}
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 3.5rem;
+    color: var(--color-blue);
+}
+
+.logo p  {
+    font-size: 3rem;
+}
+
+.logo p span {
+    font-size: 3rem;
+    color: var(--color-blue);
+}
+
+.nav_contact {
+    position: absolute;
+    right: 15rem;
+}
+
+.nav_contact i {
+    color: var(--color-blue);
+}
+
+.nav_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.nav_btn button {
+    border: none;
+    outline: none;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    padding: 0.7em 1.7em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.nav_btn button:hover {
+    border-radius: 20px;
+    color: var(--color-blue);
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+.nav_2 {
+    height: 3.5rem;
+    background-color: var(--color-lightblue);
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    gap: 1rem;
+    color: var(--color-white);
+}
+
+.nav_links p {
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.nav_links p:hover {
+    color: var(--color-blue);
+}
+
+.uil-estate {
+    font-size: 2rem;
+    align-items: center;
+}
+
+.nav_socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 7rem;
+}
+
+.nav_socials i {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+.nav_socials i:hover {
+    cursor: pointer;
+    color: var(--color-blue);
+}
+
+/* ------------------------------------------- END OF NAV -------------------------------------------- */
+
+header {
+    width: 100%;
+    height: 84vh;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------------------------- END OF HEADER -------------------------------------------- */
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+.section_container {
+    width: 85%;
+    height: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section_container .advantage_header {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+.section_container .advantage_header span {
+    color: var(--color-blue);
+}
+
+.advantage_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage {
+    width: 27vw;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+} 
+
+.advantage i {
+    font-size: 3.8rem;
+    color: var(--color-blue);
+    padding-bottom: 0rem;
+}
+
+.idiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding-top: 2em;
+}
+
+.idiv div {
+    display: flex;
+    place-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 700;
+}
+
+.idiv .two {
+    color: white;
+    background-color: var(--color-blue);
+}
+
+.idiv .three {
+    color: white;
+    background-color: var(--color-lightblue);
+}
+
+.property_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: 1rem;
+}
+
+.properties {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.properies_img {
+    width: 100%;
+    height: 35vh;
+    border: 1px solid rgb(164, 164, 164);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.properies_img img {
+    width: 97%;
+    height: 97%;
+    object-fit: cover;
+}
+
+.properties_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.properties_info .property_btn {
+    font-size: 1em;
+    padding: 1em 2.5em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.property_btn:hover {
+    background-color: var(--color-lightblue);
+    cursor: pointer;
+}
+
+/* ----------------------------------------------- END OF ADVANTAGE ----------------------------------------------- */
+
+.section_one {
+    width: 100%;
+    height: auto;
+    background: var(--color-blue);
+}
+
+.section_one_container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 2160px;
+    display: flex;
+    gap: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.advice_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    color: white;
+}
+
+.advice_header {
+    text-align: start;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+
+.advice_header span {
+    color: var(--color-lightblue);
+}
+
+.advice h2 {
+    color: var(--color-lightblue);
+}
+
+.two span {
+    color: var(--color-lightblue);
+}
+
+.logo-2 {
+    display: flex;
+    align-items: center;
+}
+
+.logo-2 i {
+    font-size: 3.5rem;
+    color: var(--color-lightblue);
+}
+
+.logo-2 p  {
+    font-size: 3rem;
+    color: white;
+}
+
+.logo-2 p span {
+    font-size: 3rem;
+    color: var(--color-lightblue);
+}
+
+/* ----------------------------------------------- END OF ADVICES ----------------------------------------------- */
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer_container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 2160px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.footer_info h4 {
+    font-size: 1.4em;
+}
+
+.footer_info p {
+    transition: var(--transition);
+}
+
+.footer_info p:hover {
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+.footer_socials li {
+    font-size: 1.3em;
+    transition: var(--transition);
+}
+
+.footer_socials li:hover {
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+.footer_div {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: black;
+}
+
+.footer_div h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+}
